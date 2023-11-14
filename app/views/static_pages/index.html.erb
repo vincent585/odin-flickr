@@ -1,0 +1,7 @@
+<h1>Photos</h1>
+
+<%= render partial: 'form' %>
+
+<% @photos.each do |photo| %>
+  <img src="<%=Flickr.url photo %>" alt="">
+<% end %>

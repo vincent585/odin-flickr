@@ -1,0 +1,7 @@
+<div>
+  <%= form_with url: :root, method: :get do |form| %>
+    <%= form.label :user_id, 'User ID: ' %>
+    <%= form.text_field :user_id %>
+    <%= form.submit 'Search' %>
+  <% end %>
+</div>
